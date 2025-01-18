@@ -5,33 +5,35 @@
     <meta name="author" content="Littel Taco Shop">
     <meta name="discreption" content="This page will aid the customers in contacting use.">
     <title>Contact Little Taco</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutLTS.css">
     </head>
 
     <style>
         table td,table th {
-            width: 50px;
-            height: 25px;
-            padding: 3px;
+            width: 400px;
+            height: 35px;
+            padding: 5px;
             text-align: center;
         }
     </style>
 
     <body>
-        <header>
-        <h1>Welcome to The Littel Taco shop</h1>
-        <p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#Our Menu">Our Menu</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </p>
-        <figure>
-        <img src="img/taco2.jpg" alt="Littel Tacos" width="454" height="612">
-        <figcaption>Littel Tacos</figcaption>
-        </figure>
-        </header>
-        <hr>
+            <nav>
+                <a href="/"><span class="logo">Littel Taco Shop</span></a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="aboutLTS.html" class="active">About <abbr title="Littel Taco Shop">LTS</abbr></a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button>Sign in</button>
+        </nav>
+        <div class="littel">
+            <p>Welcome to About The Littel Taco shop</p>
+        </div>
+
         <h2>About <abbr title="Little Taco Shop">LTS</abbr></h2>
         <p>
             <abbr title="Little Taco Shop">LTS</abbr> was founede in 2022. Our shop was built from <strong>a love of tacos</strong>. We hope our shop adds a unique and interesting place to our little town.
@@ -46,7 +48,7 @@
             </aside>
         </p>
         <section id="Our Menu">
-        <h2>Our Menu</h2>
+        <p  class="name-table">Our Menu</p>
 
         <table border="1">
             <tr>
@@ -92,9 +94,11 @@
 
         </table>
 
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
+            <a href="#">
+                <button class="back-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m11 7.825l-4.9 4.9q-.3.3-.7.288t-.7-.313q-.275-.3-.288-.7t.288-.7l6.6-6.6q.15-.15.325-.212T12 4.425t.375.063t.325.212l6.6 6.6q.275.275.275.688t-.275.712q-.3.3-.712.3t-.713-.3L13 7.825V19q0 .425-.288.713T12 20t-.712-.288T11 19z"/>
+                    </svg>
+            </a>
         </section>
 
     </body>
