@@ -5,27 +5,31 @@
     <meta name="author" content="Littel Taco Shop">
     <meta name="discreption" content="This page will aid the customers in contacting use.">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
     <title>Contact Little Taco</title>
     </head>
 
     <body>
-        <header>
-            <h1 c;>Contact Us</h1>
-            <p>
+            <nav>
+                <a href="/"><span class="logo">Littel Taco Shop</span></a>
                 <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="aboutLTS.html">About <abbr title="Littel Taco Shop">LTS</abbr></a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                 </ul>
-            </p>
-            <figure>
-            <img src="img/taco1.jpg" alt="Littel Taco Shop Logo" width="612" height="408">
-            <figcaption>A Tray of Tacos</figcaption>
-            </figure>
-            </header>
-            <h2>Our Contact Form</h2>
+                <button>Sign in</button>
+            </nav>
+
+            <section class="background">
+    
+        <div class="form">
+            <span>Our Contact Form</span>
+            <br><br><br>
             <form action="https://httpbin.org/get" method="get">
                 <fieldset>
-                    <legend>Send Is A Message</legend>
+                    <legend>Send Us A Message</legend>
                     <p>
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" placeholder="James Henry" autocomplete="on" required>
@@ -44,16 +48,25 @@
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
             </form>
-            <h2>Our Location</h2>
+        </div>
+        <p>
+            <span class="location">Our Location</span>
             <address>555 Toto Temptation Lane, Suite T 
                 <br>
                 Kansua City: MO 555555-5555
             </address>
+        </p>
             <p>
                 <em>
-                    Phone: <a href="tel:555-555-5555">555-555-5555</a>
+                    <span class="phone">phone:</span> <a href="tel:555-555-5555">555-555-5555</a>
                 </em>
             </p>
-            <a href="#">Back to Top</a>
+            <a href="#">
+                <button class="back-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m11 7.825l-4.9 4.9q-.3.3-.7.288t-.7-.313q-.275-.3-.288-.7t.288-.7l6.6-6.6q.15-.15.325-.212T12 4.425t.375.063t.325.212l6.6 6.6q.275.275.275.688t-.275.712q-.3.3-.712.3t-.713-.3L13 7.825V19q0 .425-.288.713T12 20t-.712-.288T11 19z"/>
+                    </svg>
+                </button>
+            </a>
+        </section>
     </body>
 </html>
