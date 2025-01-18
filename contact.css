@@ -1,0 +1,66 @@
+.background {
+    width: 100%;
+    height: fit-content;
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    url('./tacos55.jpeg');
+}
+.background h1 {
+    margin: 0%;
+
+}
+
+.form {
+    text-align: center;
+}
+
+.form span {
+    font-size: 40px;
+    font-weight: 600;
+}
+.form legend {
+    font-size: 25px;
+}
+
+div button {
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 13px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 7px; 
+    transition: .3s ease-out;
+}
+
+div button:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.location {
+    font-size: 20px;
+    font-weight:550 ;
+}
+
+address {
+    font-style: italic ;
+}
+.phone {
+    font-weight: 500;
+}
+
+.back-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgb(69, 69, 69);  
+    border-radius: 50%;
+}
+.back-top:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
